@@ -2,6 +2,7 @@ import Foundation
 
 public class MyNumber{
 
+public init() {}
 
   public  func addition(numero1: Double, numero2 : Double) -> Double {
 

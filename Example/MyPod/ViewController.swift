@@ -10,14 +10,19 @@ import UIKit
 import MyPod
 
 class ViewController: UIViewController {
+    
+    var n1 = 10.2
+    var n2 = 3.5
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var test = MyNumber.self
+        let test = MyNumber()
+        var result = 0.0
         
-        test.addition(1.0,5.1)
+      result =  test.soustraction(numero1 : n1, numero2 : n2)
+    
     }
 
     override func didReceiveMemoryWarning() {
