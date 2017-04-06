@@ -21,7 +21,10 @@ class ViewController: UIViewController {
         let test = MyNumber()
         var result = 0.0
         
-      result =  test.soustraction(numero1 : n1, numero2 : n2)
+      result =  test.addition(numero1 : n1, numero2 : n2)
+        
+        
+        print(result)
     
     }
 

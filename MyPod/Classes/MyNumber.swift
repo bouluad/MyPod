@@ -6,6 +6,13 @@ public init() {}
 
   public  func addition(numero1: Double, numero2 : Double) -> Double {
 
+  if let fileUrl = Bundle.main.url(forResource: "config", withExtension: "plist"),
+     let data = try? Data(contentsOf: fileUrl) {
+         if let result = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [[String: Any]] { // [String: Any] which ever it is
+              print(result)
+         }
+  }
+
         return (numero1 + numero2)
     }
   public  func soustraction(numero1: Double, numero2 : Double) -> Double {
