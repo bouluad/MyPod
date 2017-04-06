@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import MyPod
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        var test = MyNumber.self
+        
+        test.addition(1.0,5.1)
     }
 
     override func didReceiveMemoryWarning() {
